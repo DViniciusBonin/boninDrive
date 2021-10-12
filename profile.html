@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./compartilhaBytes.png" alt="">
+            <div class="message-user">
+                Olá, usuário
+            </div>
+            <div class="hamburguer"></div>
+          
+            <ul class="menu">
+                <li><a href="#"><img src="./home.svg"> Home</a></li>
+                <li><a href="./index.html"><img src="./logout.svg">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="upload">
+            <h3>Compartilhe um arquivo com a comunidade</h3>
+            <form action="#">
+                <textarea name="description" id="description" cols="60" rows="5" placeholder="Adicione uma descrição para seu arquivo...."></textarea>
+              
+                <label for="file"><img class="icon-file" src="file.png" alt="file"> Escolha um arquivo</label>
+                <input type="file" name="file" id="file" class="inputfile" />
+                <button>Enviar</button>
+
+            </form>
+        </section>
+
+        <div class="feed">
+            <span>Feed</span>
+
+            <section class="post-file">
+                <figure>
+                    <img class="file-posted" src="file.png" alt="file-posted">
+                    <figcaption>
+                        <span class="title">Arquivo: </span>Ebook código limpo
+                        <h4>Descrição</h4>
+                        <p>Principais práticas de clean code para desenvolvimento de software.</p>
+                    </figcaption>
+                </figure>
+              
+                <div class="comments">
+                    <span class="title">Outros comentários:</span>
+                   <section class="comment">
+                        <span>João</span>
+                        <p>Gostei muito!</p>
+                   </section>
+
+                   <section class="comment">
+                        <span>Ronaldo</span>
+                        <p>Bom</p>
+                   </section>
+                   <section class="comment">
+                        <span>Maria</span>
+                        <p>Sensacional, o jeito que estou desenvolvendo mudou completamente</p>
+                   </section>
+                   <section class="comment">
+                        <span>Fernando</span>
+                        <p>Poderia adicionar um conteudo sobre TDD</p>
+                   </section>
+                </div>
+            </section>
+            <section class="post-file">
+                <figure>
+                    <img class="file-posted" src="file.png" alt="file-posted">
+                    <figcaption>
+                        <span class="title">Arquivo: </span>Ebook código limpo
+                        <h4>Descrição</h4>
+                        <p>Principais práticas de clean code para desenvolvimento de software.</p>
+                    </figcaption>
+                </figure>
+              
+                <div class="comments">
+                    <span class="title">Outros comentários:</span>
+                   <section class="comment">
+                        <span>João</span>
+                        <p>Gostei muito!</p>
+                        <div class="options">
+                            <button class="update">Editar</button>
+                            <button class="delete">Apagar</button>
+                        </div>
+                   </section>
+
+                   <section class="comment">
+                        <span>Ronaldo</span>
+                        <p>Bom</p>
+                   </section>
+                   <section class="comment">
+                        <span>Maria</span>
+                        <p>Sensacional, o jeito que estou desenvolvendo mudou completamente</p>
+                   </section>
+                   <section class="comment">
+                        <span>Fernando</span>
+                        <p>Poderia adicionar um conteudo sobre TDD</p>
+                   </section>
+                </div>
+            </section>
+            <section class="post-file">
+                <figure>
+                    <img class="file-posted" src="file.png" alt="file-posted">
+                    <figcaption>
+                        <span class="title">Arquivo: </span>Ebook código limpo
+                        <h4>Descrição</h4>
+                        <p>Principais práticas de clean code para desenvolvimento de software.</p>
+                    </figcaption>
+                </figure>
+              
+                <div class="comments">
+                    <span class="title">Outros comentários:</span>
+                   <section class="comment">
+                        <span>João</span>
+                        <p>Gostei muito!</p>
+                   </section>
+
+                   <section class="comment">
+                        <span>Ronaldo</span>
+                        <p>Bom</p>
+                   </section>
+                   <section class="comment">
+                        <span>Maria</span>
+                        <p>Sensacional, o jeito que estou desenvolvendo mudou completamente</p>
+                   </section>
+                   <section class="comment">
+                        <span>Fernando</span>
+                        <p>Poderia adicionar um conteudo sobre TDD</p>
+                   </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+   <script type="module" src="scripts/script.js"></script>
+</body>
+</html>

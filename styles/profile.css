@@ -1,0 +1,260 @@
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    /* background-color: #3c6e71; */
+    background-color: #d9d9d9;
+
+    padding: 10px 20px;
+
+    position: fixed;
+
+    top: 0;
+
+    z-index: 999;
+}
+
+.navbar {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .message-user {
+    /* margin-left: -40px; */
+    text-align: center;
+}
+
+.logo {
+    width: 30%; 
+
+    /* background-color: #555; */
+
+}
+
+.hamburguer {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer:after {
+    content: "";
+
+    position: absolute;
+    top: 35%;
+    left: -80%;
+    width: 150%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: #3c6e71;
+
+}
+.hamburguer:before {
+    content: "";
+
+    position: absolute;
+    top: 55%;
+    left: -30%;
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: #3c6e71;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 10px;
+
+}
+
+.menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color:#353535;
+    transition: 0.5s ease;
+}
+
+.menu li a img {
+    height: auto;
+    width: 30px;
+
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: gray;
+}
+
+main{
+    margin-top: 5rem;
+}
+
+.upload {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    margin: 7rem auto 0;
+    padding: 0.8rem;
+}
+
+.upload form {
+
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.icon-file {
+    max-width: 20px;
+}
+
+label {
+    margin: 1 5rem;
+    background-color: #4095db;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.inputfile {
+    display: inline-block;
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+button {
+    margin: 1 5rem;
+    display: inline;
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea{
+    max-width: 90%;
+    display: block;
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+    padding: 10px;
+    outline: 0;
+    box-shadow: 0 5px 5px 5px #ccc;
+}
+
+.feed {
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    max-width: 90%;
+    margin: 1rem auto 0;
+}
+
+.post-file {
+    max-width: 100%;
+    /* border: 1px solid blue; */
+    margin: 15px auto;
+    box-shadow: 0 5px 5px 5px #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.post-file figure {
+    display: flex;
+    align-items: center;
+}
+.post-file .file-posted {
+    max-width: 80px;
+}
+
+.post-file .comments {
+    margin: 1rem auto 0;
+    padding: 10px;
+}
+
+.post-file .comment {
+    /* border-bottom: 1px solid black;   */
+    padding: 4px;
+}
+
+.post-file .comments .comment span{
+    font-weight: bold;   
+}
+.post-file .comments .comment  p{
+    margin: 5px 0 5px 20px; 
+}
+
+.delete {
+    background-color: #ff475a;
+    color: #fff;
+}
+
+.update {
+    background-color: #ffce2e;
+}
+
+@media screen and (max-width: 980px) {
+    .hamburguer {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        margin: 0;
+        background-color: #284b63;
+        width: 100%;
+        max-width: 250px;
+        padding: 100px 20px;
+        flex-direction: column;
+
+        transition: 0.5s ease;
+
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .menu li a {
+       
+        color:#fff;
+        
+    }
+}
