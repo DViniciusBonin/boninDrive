@@ -107,155 +107,47 @@ header {
     color: gray;
 }
 
-main{
-    margin-top: 5rem;
+main {
+    margin-top: 8rem;
+    width: 100%;
 }
 
-.upload {
-    border: 1px solid #ccc;
-    border-radius: 10px;
+h2 {
+    max-width: 70%;
     text-align: center;
-    width: 90%;
-    margin: 7rem auto 0;
-    padding: 0.8rem;
-}
-
-.upload form {
-
-    max-width: 90%;
     margin: 0 auto;
 }
 
-.icon-file {
-    max-width: 15px;
-}
-
-label {
-    margin: 1 5rem;
-    background-color: #4095db;
-    border-radius: 10px;
-    padding: 0.8rem;
-    max-width: 80px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 0.7rem;
-}
-
-.inputfile {
-    display: inline-block;
-    width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
-button {
-    margin: 1 5rem;
-    display: inline;
-    background-color: chartreuse;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-textarea{
-    max-width: 90%;
-    display: block;
-    margin: 1rem auto;
-    margin-bottom: 1rem;
-    padding: 10px;
-    outline: 0;
-    box-shadow: 0 5px 5px 5px #ccc;
-}
-
-.feed {
-    /* border: 1px solid #ccc; */
-    border-radius: 10px;
-    /* border: 1px solid red; */
-    padding: 10px;
-    max-width: 90%;
-    margin: 1rem auto 0;
-}
-
-.post-file {
-    max-width: 100%;
-    /* border: 1px solid blue; */
-    margin: 15px auto;
-    box-shadow: 0 5px 5px 5px #ccc;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.post-file figure {
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
     display: flex;
-    align-items: center;
-}
-.post-file .file-posted {
-    max-width: 80px;
+    justify-content: center;
+
 }
 
-.post-file .comments {
-    margin: 1rem auto 0;
-    padding: 10px;
+table tr {
+    background-color: #ccc;
 }
 
-.post-file .comment {
-    /* border-bottom: 1px solid black;   */
-    padding: 4px;
-}
-
-.post-file .comments .comment span{
-    font-weight: bold;   
-}
-.post-file .comments .comment  p{
-    margin: 5px 0 5px 20px; 
-}
-
-.delete {
-    background-color: #ff475a;
-    color: #fff;
-}
-
-.update {
-    background-color: #ffce2e;
-}
-
-.btn-comment {
-    background-color: #4095db;
+table td {
+    width: 50%;
+    padding: 5px;
 }
 
 .filter {
-    margin: 0 auto;
-    width: 100%;
     text-align: center;
 }
 
-
-.filter form{
-    width: 100%;
-    margin: 0 auto;
-  
-}
-
-.filter .checkbox {
-    margin: 0 0.7rem;
-}
-
-.filter .input-filter {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 50%;
-
+input {
     padding: 10px;
-    margin: 0 0.2rem;
 }
 
 .search {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: greenyellow;
     /* margin-left: 0.2rem; */
     transition: 1s ease;
 }
@@ -263,9 +155,17 @@ textarea{
     max-width: 20px;
 }
 
-.search:hover {
-    background-color: green;
-    transition: 1s ease;
+.filter form {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filter form input {
+    margin: 0 1rem;
+    outline: auto;
 }
 
 @media screen and (max-width: 980px) {

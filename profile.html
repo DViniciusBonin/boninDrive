@@ -13,15 +13,16 @@
 <body>
     <header>
         <nav class="navbar">
-            <img class="logo" src="./compartilhaBytes.png" alt="">
+            <img class="logo" src="public/compartilhaBytes.png" alt="">
             <div class="message-user">
                 Olá, usuário
             </div>
             <div class="hamburguer"></div>
           
             <ul class="menu">
-                <li><a href="#"><img src="./home.svg"> Home</a></li>
-                <li><a href="./index.html"><img src="./logout.svg">Sair</a></li>
+                <li><a href="./profile.html"><img src="public/icons/home.svg"> Home</a></li>
+                <li><a href="./report.html"><img src="public/icons/report-icon.png"> Relatórios</a></li>
+                <li><a href="./index.html"><img src="public/icons/logout.svg">Sair</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +32,7 @@
             <form action="#">
                 <textarea name="description" id="description" cols="60" rows="5" placeholder="Adicione uma descrição para seu arquivo...."></textarea>
               
-                <label for="file"><img class="icon-file" src="file.png" alt="file"> Escolha um arquivo</label>
+                <label for="file"><img class="icon-file" src="public/icons/file.png" alt="file"> Escolha um arquivo</label>
                 <input type="file" name="file" id="file" class="inputfile" />
                 <button>Enviar</button>
 
@@ -40,10 +41,22 @@
 
         <div class="feed">
             <span>Feed</span>
+            
+            <section class="filter">
+                <form action="">
+                   
+                    <div>
+                        Ordenar por data: <input type="checkbox" class="checkbox">
+                    Ordenar por ordem alfabética: <input type="checkbox" class="checkbox">
+                    </div>
+                    Filtrar por descrição: <input type="text" name="description-filter" class="input-filter">
+                    <button class="search"><img src="public/icons/search-icon.png" alt="search"></button>
+                </form>
+            </section>
 
             <section class="post-file">
                 <figure>
-                    <img class="file-posted" src="file.png" alt="file-posted">
+                    <img class="file-posted" src="public/icons/file.png" alt="file-posted">
                     <figcaption>
                         <span class="title">Arquivo: </span>Ebook código limpo
                         <h4>Descrição</h4>
@@ -70,11 +83,12 @@
                         <span>Fernando</span>
                         <p>Poderia adicionar um conteudo sobre TDD</p>
                    </section>
+                   <button class="btn-comment">Comentar</button>
                 </div>
             </section>
             <section class="post-file">
                 <figure>
-                    <img class="file-posted" src="file.png" alt="file-posted">
+                    <img class="file-posted" src="public/icons/file.png" alt="file-posted">
                     <figcaption>
                         <span class="title">Arquivo: </span>Ebook código limpo
                         <h4>Descrição</h4>
@@ -105,11 +119,12 @@
                         <span>Fernando</span>
                         <p>Poderia adicionar um conteudo sobre TDD</p>
                    </section>
+                   <button class="btn-comment">Comentar</button>
                 </div>
             </section>
             <section class="post-file">
                 <figure>
-                    <img class="file-posted" src="file.png" alt="file-posted">
+                    <img class="file-posted" src="public/icons/file.png" alt="file-posted">
                     <figcaption>
                         <span class="title">Arquivo: </span>Ebook código limpo
                         <h4>Descrição</h4>
@@ -136,6 +151,7 @@
                         <span>Fernando</span>
                         <p>Poderia adicionar um conteudo sobre TDD</p>
                    </section>
+                   <button class="btn-comment">Comentar</button>
                 </div>
             </section>
         </div>

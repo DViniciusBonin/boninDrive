@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/profile.css"> -->
+    <link rel="stylesheet" href="./styles/report.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="public/compartilhaBytes.png" alt="">
+            <div class="message-user">
+                Olá, usuário
+            </div>
+            <div class="hamburguer"></div>
+          
+            <ul class="menu">
+                <li><a href="./profile.html"><img src="public/icons/home.svg"> Home</a></li>
+                <li><a href="./report.html"><img src="public/icons/report-icon.png"> Relatórios</a></li>
+                <li><a href="./index.html"><img src="public/icons/logout.svg">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <h2>Relatório de arquivos enviados</h2>
+
+
+       <section class="filter">
+        <form action="">
+            
+            Data inicial:<input type="date" name="date-start"> 
+            Data final:<input type="date" name="date-end"> 
+
+            Ordenar por ordem alfabética: <input type="checkbox" class="checkbox">
+            <button class="search"><img src="public/icons/search-icon.png" alt="search"></button>
+        </form>
+    </section>
+       <table>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+        </tr>
+
+           <tr>
+               <td>Ebook código limpo</td>
+               <td>Principais práticas de clean code para desenvolvimento de software</td>
+           </tr>
+           <tr>
+               <td>Ebook código limpo</td>
+               <td>Principais práticas de clean code para desenvolvimento de software</td>
+           </tr>
+       </table>
+    </main>
+
+    
+   <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
