@@ -167,6 +167,7 @@ textarea{
     padding: 10px;
     outline: 0;
     box-shadow: 0 5px 5px 5px #ccc;
+    resize: none;
 }
 
 .feed {
@@ -219,14 +220,26 @@ textarea{
 .delete {
     background-color: #ff475a;
     color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .update {
     background-color: #ffce2e;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
 
 .btn-comment {
     background-color: #4095db;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
 }
 
 .filter {

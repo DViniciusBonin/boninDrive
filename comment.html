@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report</title>
     <link rel="stylesheet" href="./styles/reset.css">
-    <!-- <link rel="stylesheet" href="./styles/profile.css"> -->
-    <link rel="stylesheet" href="./styles/report.css">
+    <link rel="stylesheet" href="./styles/comment.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   
 </head>
@@ -30,34 +29,20 @@
         </nav>
     </header>
     <main>
-       <h2>Relatório de arquivos enviados</h2>
+       <div class="container">
+           <div class="file-info">
+            <span>Arquivo:</span> Ebook código limpo
+            <h4>Descrição:</h4>
+            <p>Principais práticas de clean code para desenvolvimento de software.</p>
+           </div>
 
-
-       <section class="filter">
-        <form action="">
-            
-            Data inicial:<input type="date" name="date-start"> 
-            Data final:<input type="date" name="date-end"> 
-
-            Ordenar por ordem alfabética: <input type="checkbox" class="checkbox">
-            <button class="search"><img src="public/icons/search-icon.png" alt="search"></button>
-        </form>
-    </section>
-       <table>
-        <tr>
-            <th>Nome</th>
-            <th>Descrição</th>
-        </tr>
-
-           <tr>
-               <td>Ebook código limpo</td>
-               <td>Principais práticas de clean code para desenvolvimento de software</td>
-           </tr>
-           <tr>
-               <td>Ebook código limpo</td>
-               <td>Principais práticas de clean code para desenvolvimento de software</td>
-           </tr>
-       </table>
+           <form action="profile.html">
+               <label for="comment" class="label-comment">Comentário:</label>
+               <textarea name="description" id="description" cols="60" rows="5" placeholder="Digite seu comentário...."></textarea>
+              
+               <button>Enviar</button>
+           </form>
+       </div>
     </main>
 
     

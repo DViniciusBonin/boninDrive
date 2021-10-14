@@ -1,7 +1,6 @@
 html {
     overflow: hidden;
 }
-
 body {
     width: 100%;
     height: 100vh;
@@ -111,64 +110,53 @@ header {
 }
 
 main {
-    margin-top: 8rem;
-    width: 100%;
+    margin-top: 7rem;
 }
-
-h2 {
-    max-width: 70%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-table {
+.container {
+    box-shadow: 0 5px 5px 5px #ccc;
     width: 90%;
-    max-width: 800px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-
-}
-
-table tr {
-    background-color: #ccc;
-}
-
-table td {
-    width: 50%;
-    padding: 5px;
-}
-
-.filter {
-    text-align: center;
-}
-
-input {
-    padding: 10px;
-}
-
-.search {
+    margin: 5rem auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: greenyellow;
-    /* margin-left: 0.2rem; */
-    transition: 1s ease;
-}
-.search img{
-    max-width: 20px;
 }
 
-.filter form {
-    margin-top: 2rem;
+.container .file-info {
+    padding: 10px;
+}
+
+.container span {
+    font-weight: bold;
+}
+
+.container h4 {
+    margin-top: 1rem;
+}
+
+.container form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-
+    margin: 1rem auto;
+    width: 90%;
 }
 
-.filter form input {
-    margin: 0 1rem;
-    outline: auto;
+.container form label {
+    display: block;
+}
+
+.container form textarea {
+    border: 1px solid black;
+    margin: 10px 0;
+    height: 300px;
+}
+
+.container button {
+    background-color: #284b63;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 980px) {
