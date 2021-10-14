@@ -36,11 +36,14 @@ header {
     text-align: center;
 }
 
-.logo {
+.logo  {
     width: 30%; 
 
     /* background-color: #555; */
 
+}
+.logo img {
+    width: 100%;
 }
 
 .hamburguer {
@@ -141,10 +144,13 @@ table td {
 
 .filter {
     text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
 }
 
 input {
-    padding: 10px;
+    padding: 5px;
 }
 
 .search {
@@ -163,11 +169,12 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    word-break: keep-all;
 
 }
 
 .filter form input {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     outline: auto;
 }
 

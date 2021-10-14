@@ -33,11 +33,14 @@ header {
     text-align: center;
 }
 
-.logo {
+.logo  {
     width: 30%; 
 
     /* background-color: #555; */
 
+}
+.logo img {
+    width: 100%;
 }
 
 .hamburguer {
@@ -196,6 +199,10 @@ textarea{
     display: flex;
     align-items: center;
 }
+
+.post-file figure figcaption p{
+    margin-bottom: 10px;
+}
 .post-file .file-posted {
     max-width: 80px;
 }
@@ -279,6 +286,14 @@ textarea{
 .search:hover {
     background-color: green;
     transition: 1s ease;
+}
+
+.download {
+    text-decoration: none;
+    color: black;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 980px) {

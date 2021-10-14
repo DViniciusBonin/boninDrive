@@ -35,11 +35,14 @@ header {
     text-align: center;
 }
 
-.logo {
+.logo  {
     width: 30%; 
 
     /* background-color: #555; */
 
+}
+.logo img {
+    width: 100%;
 }
 
 .hamburguer {
