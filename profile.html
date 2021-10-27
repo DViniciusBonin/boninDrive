@@ -48,7 +48,7 @@
                 <form action="">
                    
                     <div>
-                        Ordenar por data: <input type="checkbox" class="checkbox">
+                        <!-- Ordenar por data: <input type="checkbox" class="checkbox"> -->
                     Ordenar por ordem alfabética: <input type="checkbox" class="checkbox">
                     </div>
                     Filtrar por descrição: <input type="text" name="description-filter" class="input-filter">
@@ -56,6 +56,17 @@
                 </form>
             </section>
 
+            <section class="pagination">
+                <ol>
+                    <span>Página: </span>
+                    <li><a href="./profile.html">1</a></li>
+                    <li><a href="./profile.html">2</a></li>
+                    <li><a href="./profile.html">3</a></li>
+                    <li><a href="./profile.html">4</a></li>
+                    <li><a href="./profile.html">5</a></li>
+                
+                </ol>
+            </section>
             <section class="post-file">
                 <figure>
                     <img class="file-posted" src="public/icons/file.png" alt="file-posted">
@@ -109,7 +120,7 @@
                         <span>João</span>
                         <p>Gostei muito!</p>
                         <div class="options">
-                            <a href="profile.html" class="update">Editar</a>
+                            <a href="comment.html" class="update">Editar</a>
                             <a href="profile.html" class="delete">Apagar</a>
                         </div>
                    </section>
@@ -170,6 +181,6 @@
     </main>
 
     
-   <script type="module" src="scripts/script.js"></script>
+   <script src="./scripts/script.js"></script>
 </body>
 </html>

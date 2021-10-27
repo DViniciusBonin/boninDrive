@@ -296,6 +296,32 @@ textarea{
     border-radius: 5px;
 }
 
+.pagination {
+    margin-top: 1rem;
+}
+
+.pagination ol{
+    display: flex;
+    list-style-type: none;
+}
+
+.pagination ol li {
+    margin: 0 5px;
+    background-color: #ccc;
+    padding: 2px 5px;
+}
+
+.pagination ol li:hover {
+    background-color: gray;
+    transition: 0.8s;
+}
+
+.pagination ol li a {
+    text-decoration: none;
+    color: #353535;
+}
+
+
 @media screen and (max-width: 980px) {
     .hamburguer {
         display: block;
